@@ -1,6 +1,7 @@
 #include "stdafx.h"
 
 #include "g2/g2.h"
+
 #include "bellina/bl-node.h"
 #include "bellina/bl-flags.h"
 
@@ -11,12 +12,7 @@ using namespace g2::flags;
 using namespace bl;
 using namespace bl::flags;
 
-namespace eos {
-	namespace _ {
-		void renderLabel(Node *node, int dx, int dy);
-		void renderBorder(Node *node, bool mustTopCanvas, int deltaX, int deltaY);
-	}
-}
+using namespace eos::_;
 
 void eos::_::renderLabel(Node *node, int dx, int dy) {
 	g2::color(node->font_red, node->font_green, node->font_blue);
